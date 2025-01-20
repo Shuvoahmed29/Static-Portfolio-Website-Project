@@ -1,0 +1,325 @@
+:root{
+    --text-color : black;
+    --link-color: blue;
+    --background-color: #eeeff1;
+    --font-style: "Poppins",'sans-serif';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",'sans-serif';
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 22px;
+}
+nav .left i{
+    color: rgb(14, 125, 27);
+    font-size: 22px;
+}
+nav .right a i{
+    color: rgb(14, 125, 27);
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--background-color);
+    padding-left: 25px;
+}
+
+.hero-section .text{
+    flex: 6;
+}
+.hero-section .image-div{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .text .name{
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.hero-section .text .hand{
+    color: rgb(239, 116, 15);
+    font-size: 45px;
+    padding-left: 5px;
+}
+
+.hero-section .text .link{
+    margin-top: 25px;
+}
+
+.hero-section .text .link a{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid var(--link-color);
+    border-radius: 10%;
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.hero-section .text .link a:hover{
+    background-color: blue;
+    border: 2px solid aqua;
+}
+
+.image-div img{
+    width: 350px;
+    height: 350px;
+    border: 5px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+.skill-section .skill-div .skill{
+    font-weight: 900;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.skill-section .skill-div i{
+    color: rgb(239, 116, 15);
+    font-size: 45px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-section p{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 12px;
+}
+
+.skill-section .all-cell{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.skill-section .all-cell .cell{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border: 2px solid gray;
+    width: 200px;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.skill-section .all-cell .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skill-section .all-cell .cell span{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-section-head{
+    font-weight: 900;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+
+.project-section-head .icon i{
+    color: rgb(239, 116, 15);
+    font-size: 45px;
+    padding-left: 5px;
+}
+
+.project-body .projects p{
+    padding-left: 25px;
+    padding-right: 35px;
+}
+
+.project-body .projects .project-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+/* .project-body .projects .project-div .project-left{
+    border: 2px solid red;
+} */
+
+.project-body .projects .project-div span{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.project-body .projects .project-div i{
+    font-size: 25px;
+    padding-right: 10px;
+    color: red;
+}
+
+.project-body .projects .project-div .date{
+    color: rgb(2, 17, 17);
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+.project-body .projects .project-div ul{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.project-body .projects .project-div a{
+    border: 2px solid blue;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-left: 90px;
+    margin-bottom: 150px;
+}
+
+.project-body .projects .project-div a:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+/* .project-body .projects .project-div .project-right{
+    border: 2px solid red;
+} */
+
+.contact-section{
+    padding-left: 25px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.contact-section h2{
+    font-size: 45px;
+    font-size: 900;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.contact-section .group input,
+.contact-section .group textarea{
+    font-size: 16px;
+    font-family: var(--font-style);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;  
+}
+
+.contact-section .group button{
+    font-family: var(--font-style);
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid brown;
+    border-radius: 7%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-section .group button:hover{
+    background-color: blue;
+}
+
+.contact-section .group form label{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
